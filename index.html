@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final_meme_maker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="colors">
+      <input type="color" id="color" class="color-option" />
+      <div
+        class="color-option"
+        style="background-color: #e74c3c"
+        data-color="#e74c3c"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #ef8a0f"
+        data-color="#ef8a0f"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #f1c40f"
+        data-color="#f1c40f"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #2ecc71"
+        data-color="#2ecc71"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #27ae60"
+        data-color="#27ae60"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #15b9f5"
+        data-color="#15b9f5"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #075acf"
+        data-color="#075acf"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #8e44ad"
+        data-color="#8e44ad"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #bdc3c7"
+        data-color="#bdc3c7"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #95a5a6"
+        data-color="#95a5a6"
+      ></div>
+      <div
+        class="color-option"
+        style="background-color: #34495e"
+        data-color="#34495e"
+      ></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+      <span>Line thick</span>
+      <input
+        type="range"
+        min="1"
+        max="10"
+        id="line-width"
+        step="0.01"
+        value="5"
+      />
+      <button id="mode-btn">Stroke</button>
+      <button id="erase-btn">Erase</button>
+      <button id="destroy-btn">Destroy</button>
+      <!-- 모든 이미지만 넣을수있게 제한 -->
+      <label for="file"
+        >Add picture
+        <input id="file" type="file" accept="image/*" />
+      </label>
+      <input type="text" placeholder="Write and double click" id="text_" />
+      <button id="save_btn">Save</button>
+      <span>Font size</span>
+      <input
+        id="font_size"
+        type="range"
+        min="20"
+        max="120"
+        value="60"
+        step="5"
+      />
+    </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- 1. 필/스트로크 분리
+2. 폰트(폰트, 사이즈, fillFont/strokeFont) -->
